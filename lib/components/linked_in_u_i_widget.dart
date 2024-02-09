@@ -39,6 +39,8 @@ class _LinkedInUIWidgetState extends State<LinkedInUIWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return Container(
       width: 200.0,
       height: 100.0,

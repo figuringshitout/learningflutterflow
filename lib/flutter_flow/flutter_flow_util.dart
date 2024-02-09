@@ -16,6 +16,7 @@ import 'lat_lng.dart';
 export 'lat_lng.dart';
 export 'place.dart';
 export 'uploaded_file.dart';
+export '../app_state.dart';
 export 'flutter_flow_model.dart';
 export 'dart:math' show min, max;
 export 'dart:typed_data' show Uint8List;
@@ -247,9 +248,6 @@ extension IterableExt<T> on Iterable<T> {
       .values
       .toList();
 }
-
-void setAppLanguage(BuildContext context, String language) =>
-    MyApp.of(context).setLocale(language);
 
 void setDarkModeSetting(BuildContext context, ThemeMode themeMode) =>
     MyApp.of(context).setThemeMode(themeMode);

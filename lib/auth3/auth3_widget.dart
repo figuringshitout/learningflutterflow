@@ -5,25 +5,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'home_model.dart';
-export 'home_model.dart';
+import 'auth3_model.dart';
+export 'auth3_model.dart';
 
-class HomeWidget extends StatefulWidget {
-  const HomeWidget({super.key});
+class Auth3Widget extends StatefulWidget {
+  const Auth3Widget({super.key});
 
   @override
-  State<HomeWidget> createState() => _HomeWidgetState();
+  State<Auth3Widget> createState() => _Auth3WidgetState();
 }
 
-class _HomeWidgetState extends State<HomeWidget> {
-  late HomeModel _model;
+class _Auth3WidgetState extends State<Auth3Widget> {
+  late Auth3Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomeModel());
+    _model = createModel(context, () => Auth3Model());
   }
 
   @override
@@ -53,21 +53,6 @@ class _HomeWidgetState extends State<HomeWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
-          automaticallyImplyLeading: false,
-          title: Text(
-            'Page Title',
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
-                ),
-          ),
-          actions: [],
-          centerTitle: false,
-          elevation: 2.0,
-        ),
         body: SafeArea(
           top: true,
           child: Column(
