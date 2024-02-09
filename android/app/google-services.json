@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702545342349",
+    "project_id": "learn-flutterflow-yuap7o",
+    "storage_bucket": "learn-flutterflow-yuap7o.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702545342349:android:f0250225a09768b3e657c4",
+        "android_client_info": {
+          "package_name": "com.mycompany.learnflutterflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDobU7F0LKJN4lP-lEgEh-0qFInrv7b6gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
